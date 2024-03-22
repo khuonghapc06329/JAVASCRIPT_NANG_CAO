@@ -1,0 +1,9 @@
+database = [
+  {
+    id:1,
+    name: "Huỳnh An Khương",
+    student_code:"PC06329",
+    age:21,
+    major:"Website programming"
+  }
+]
