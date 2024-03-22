@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bài tập thêm 3 JS nâng cao</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.ckeditor.com/4.22.1/basic/ckeditor.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div style="border: 1px solid #d0d0d0; margin-top: 2%; margin-bottom: 2%;" class="container">
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">
+                        <h3>THÔNG TIN SINH VIÊN</h3>
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Họ tên: <span class="text-danger">Huỳnh An Khương</span></th>
+
+                </tr>
+                <tr>
+                    <th scope="row">MSSV: <span class="text-danger">PC06329</span></th>
+                </tr>
+                <tr>
+                    <th scope="row">Lớp: <span class="text-danger">WD18301</span></th>
+                </tr>
+                <tr>
+                    <th scope="row">Môn: <span class="text-danger">LẬP TRÌNH JAVASCRIPT NÂNG CAO</span></th>
+                </tr>
+                <tr>
+                    <th scope="row">Giảng viên hướng dẫn: <span class="text-danger">Hoàng Trần Lệ Chi</span></th>
+                </tr>
+                <tr>
+                    <th scope="row">Hình ảnh tiến độ môn học: <br>
+                        <img class="d-inline p-2" width="30%" src="./img_tien_do.jpg" alt=""><img width="30%"
+                            src="./img_chung_nhan.jpg" alt="">
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-bordered">
+            <thead class="table-secondary">
+                <tr>
+                    <th scope="col">STT</th>
+                    <th style="width: 30%;" scope="col">Kiến thức học được</th>
+                    <th style="width: 30%;" scope="col">Nội dung kiến thức</th>
+                    <th scope="col">Ví dụ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <textarea name="editor4">
+                            //Cách sử dụng toán tử &&
+                            <br>
+                            let isLoggedIn = true;
+                            let userName = isLoggedIn && "John Doe";
+
+                            console.log(userName); // Hiển thị: John Doe
+                            //Cách sử dụng toán tử ||
+                            <br>
+                            let defaultName = "Guest";
+                            let userName = "";
+
+                            // Nếu userName là một chuỗi falsy (rỗng), thì sử dụng giá trị mặc định "Guest"
+                            let finalName = userName || defaultName;
+                            <br>
+                            //Cách sử dụng tán 
+                        </textarea>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        CKEDITOR.replace('editor4');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
